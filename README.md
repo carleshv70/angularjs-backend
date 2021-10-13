@@ -14,3 +14,12 @@ Esta aplicación usa la libreria lombok. Si usas eclipse hay que seguir las inst
 
 https://projectlombok.org/download
 
+La url del endpoint para bajar los alumnos:
+http://localhost:8080/universidad/api/students/
+
+CORS ORIGINS 
+Por defecto está configurado para la url:
+http://localhost
+
+Para modificarlo hay que cambiar la clase:
+/angularjs-backend/src/main/java/org/chuix/training/universidad/backend/config/ApplicationConstant.java
