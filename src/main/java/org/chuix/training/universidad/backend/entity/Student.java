@@ -1,4 +1,4 @@
-package org.chuix.training.universidad.backend.model;
+package org.chuix.training.universidad.backend.entity;
 
 import java.io.Serializable;
 
