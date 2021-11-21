@@ -53,7 +53,7 @@ public class CountriesController {
 				.map(this.mapper::mapToDto)
 				.collect(Collectors.toList());
 		
-		return new PageResponseDto<>(page.getNumber(), page.getTotalPages(), countries);
+		return new PageResponseDto<>(page.getNumber()+1, page.getTotalPages(), countries);
 	}
 
 

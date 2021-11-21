@@ -17,7 +17,7 @@ public class CountryServices {
 	private CountryRepository countryRepo;
 	
 	public Page<Country> getCountries(PageFilterDto pageFilter) {
-		Pageable pageable = PageRequest.of(pageFilter.getPageNumber(), pageFilter.getSizeOfpage(), Sort.by(pageFilter.getOrderBy()));
+		Pageable pageable = PageRequest.of(pageFilter.getPageNumber() - 1, pageFilter.getSizeOfpage(), Sort.by(pageFilter.getOrderBy()));
 		 return this.countryRepo.findAll(pageable);
 	}
 }

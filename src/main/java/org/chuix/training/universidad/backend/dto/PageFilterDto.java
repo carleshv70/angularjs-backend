@@ -11,7 +11,7 @@ import lombok.Data;
 @Data
 public class PageFilterDto {
 	@NotNull
-	@Min(0)
+	@Min(1)
 	private int pageNumber;
 	
 	@Min(2)
